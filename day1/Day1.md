@@ -11,9 +11,11 @@
 
 ## Reflections:
 
-Felt focused and productive. Setup Git/GitHub SSH successfully. Reviewed core Python and built a few small scripts. Realized how important clean structure is.
+Setup Git/GitHub SSH successfully. Reviewed basics of Python and built a few small scripts.
 
 ## Notes:
 
 - subprocess is really powerful — great for automation
-- Remember to handle exceptions early in scripts
+- Remember to handle exceptions early in script
+
+- note the error during "try.. except" blocks
