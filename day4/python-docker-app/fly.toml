@@ -1,0 +1,25 @@
+# fly.toml app configuration file generated for python-docker-app on 2025-05-11T14:25:18-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'python-docker-app'
+primary_region = 'bos'
+
+[build]
+
+[env]
+REDIS_URL = "redis://default:28fefe198a234b34af451acba4454c78@fly-black-surf-7410.upstash.io:6379"
+
+[http_service]
+  internal_port = 5000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
